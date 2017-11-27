@@ -1,0 +1,70 @@
+from graphics import*
+def main():
+    win = GraphWin("Star", 600, 450)
+    win.setCoords(0, 0, 60, 45)
+    win.setBackground("white")
+    p = Point(20, 15)
+
+    L = Text(p, "Click 10 points in clockwise direction for points of the star")
+    L.draw(win)
+
+    #code for mouse clicks:
+    p1 = win.getMouse()
+    p1.draw(win)
+    p2 = win.getMouse()
+    p2.draw(win)
+    p3 = win.getMouse()
+    p3.draw(win)
+    p4 = win.getMouse()
+    p4.draw(win)
+    p5 = win.getMouse()
+    p5.draw(win)
+    p6 = win.getMouse()
+    p6.draw(win)
+    p7 = win.getMouse()
+    p7.draw(win)
+    p8 = win.getMouse()
+    p8.draw(win)
+    p9 = win.getMouse()
+    p9.draw(win)
+    p10 = win.getMouse()
+    p10.draw(win)
+
+    #code for polygons:
+    s1 = Polygon(p10,p1,p2)
+    s1.draw(win)
+    s1.setFill("blue")
+    s1.setOutline("red")
+    s1.setWidth(3)
+
+    s2 = Polygon(p2,p3,p4)
+    s2.draw(win)
+    s2.setFill("blue")
+    s2.setOutline("red")
+    s2.setWidth(3)
+    
+    s3 = Polygon(p4,p5,p6)
+    s3.draw(win)
+    s3.setFill("blue")
+    s3.setOutline("red")
+    s3.setWidth(3)
+    
+    s4 = Polygon(p6,p7,p8)
+    s4.draw(win)
+    s4.setFill("blue")
+    s4.setOutline("red")
+    s4.setWidth(3)
+    
+    s5 = Polygon(p8,p9,p10)
+    s5.draw(win)
+    s5.setFill("blue")
+    s5.setOutline("red")
+    s5.setWidth(3)
+    
+    s6 = Polygon(p2,p4,p6,p8,p10)
+    s6.draw(win)
+    s6.setFill("blue")
+    s6.setOutline("red")
+    s6.setWidth(3)
+    
+main()
